@@ -160,7 +160,7 @@ private fun LoginScreenPreview() {
         onPasswordChanged = { },
         isValidInput = false,
         onButtonClick = { },
-        state = LoginState.FAILED,
+        state = LoginState.CURRENT,
     )
 }
 
