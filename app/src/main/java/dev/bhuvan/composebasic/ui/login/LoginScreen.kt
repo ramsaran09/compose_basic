@@ -160,7 +160,7 @@ private fun LoginScreenPreview() {
         onPasswordChanged = { },
         isValidInput = false,
         onButtonClick = { },
-        state = LoginState.FAILED,
+        state = LoginState.Ideal,
     )
 }
 
@@ -249,7 +249,7 @@ fun LoginScreen(
             )
             Spacer(modifier = Modifier.padding(10.dp))
             when (state) {
-                LoginState.CURRENT -> {
+                is LoginState.Ideal -> {
                     LoginForm(
                         email = email,
                         onEmailChanged = onEmailChanged,
@@ -259,10 +259,10 @@ fun LoginScreen(
                         onButtonClick = onButtonClick,
                     )
                 }
-                LoginState.LOADING -> {
+                is LoginState.Loading-> {
                     CircularProgressIndicator()
                 }
-                LoginState.FAILED -> Text(text = "Logged In Failed")
+                LoginState.Failed("") -> Text(text = "Logged In Failed")
                 else -> Text(text = "Logged In Successfully")
             }
             Spacer(modifier = Modifier.weight(1f))
