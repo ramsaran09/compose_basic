@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Compose Basic</string>
+    <string name="search">Search</string>
+    <string name="attendance_marked_successfully">Attendance marked successfully</string>
+    <string name="str_attendance">Attendance</string>
+    <string name="continue_to_lecture">Continue to lecture</string>
+
 </resources>

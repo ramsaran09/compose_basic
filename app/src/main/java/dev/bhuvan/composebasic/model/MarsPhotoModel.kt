@@ -26,3 +26,7 @@ data class RoverModel(
     val name: String,
     val status: String
 )
+
+data class EarthPhotoModel(
+    val earthImage : List<String>?,
+)
