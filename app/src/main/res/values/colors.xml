@@ -11,5 +11,10 @@
     <color name="digi_blue">#147AFC</color>
     <color name="grey_200">#EEEEEE</color>
     <color name="text_color">#333333</color>
+    <color name="hint_text_color">#666666</color>
+    <color name="digi_class_clr">#393939</color>
+    <color name="notification_green">#23B916</color>
+    <color name="tab_selected_color">#1A7BDC</color>
+    <color name="red">#FF0000</color>
 
 </resources>
