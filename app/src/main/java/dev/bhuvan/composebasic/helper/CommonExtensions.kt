@@ -6,6 +6,8 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.core.content.getSystemService
+import kotlin.contracts.ExperimentalContracts
+import kotlin.contracts.contract
 
 @SuppressLint("MissingPermission")
 @Suppress("DEPRECATION")
@@ -36,3 +38,10 @@ fun Int?.defaultValue(defaultValue: Int = 0) = this ?: defaultValue
 
 fun Boolean?.defaultValue(defaultValue: Boolean = false) = this ?: defaultValue
 
+@OptIn(ExperimentalContracts::class)
+fun Boolean?.isFalse(): Boolean {
+    contract {
+        returns(false) implies (this@isFalse == null)
+    }
+    return this@isFalse == false
+}

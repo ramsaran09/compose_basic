@@ -16,5 +16,6 @@
     <color name="notification_green">#23B916</color>
     <color name="tab_selected_color">#1A7BDC</color>
     <color name="red">#FF0000</color>
+    <color name="pale_white">#F9FAFB</color>
 
 </resources>
